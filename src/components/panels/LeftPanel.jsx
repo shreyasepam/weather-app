@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 export default function LeftPanel() {
   const weatherData = useSelector((state) => state.weather);
   return (
-    <div className="w-2/6 h-full bg-white flex flex-col items-center p-4">
+    <div className="w-2/6 h-full bg-white flex flex-col items-center p-2 lg:p-4">
       <img
         src={weatherData.data?.current?.condition?.icon}
         className="w-80 object-cover"
@@ -15,7 +15,7 @@ export default function LeftPanel() {
       <p className="-mt-4 font-semibold text-xl mb-6">
         {weatherData?.data?.current?.condition?.text}
       </p>
-      <div className="w-full px-16">
+      <div className="w-full px-2 lg:px-16">
         <TemperatureDisplay
           temperature={weatherData.data?.current?.temp_c}
           unit="C"
@@ -24,7 +24,7 @@ export default function LeftPanel() {
           dateString={weatherData?.data?.current?.last_updated}
         />
       </div>
-      <div className="w-full px-14 my-6">
+      <div className="w-full px-2 lg:px-14 my-6">
         <div className="w-full border-t border-gray-300"></div>
       </div>
       <PlaceView

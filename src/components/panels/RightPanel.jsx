@@ -9,7 +9,7 @@ export default function RightPanel() {
   return (
     <div className="w-4/6 h-full bg-gray-100 p-4">
       <Input />
-      <div className="w-full flex justify-center gap-4 mt-6">
+      <div className="w-full flex justify-center gap-4 mt-6 flex-wrap">
         {weatherData?.data?.forecast?.forecastday?.map((x) => (
           <DayView
             dateString={x?.date}
@@ -21,7 +21,7 @@ export default function RightPanel() {
       </div>
       <div>
         <h2 className="text-xl font-semibold my-6">Highlights</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <HighlightCard
             name={"UV Index"}
             value={`${weatherData?.data?.current?.uv || 0}`}
