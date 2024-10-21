@@ -5,13 +5,13 @@ import HighlightCard from "../HighlightCard";
 
 export default function RightPanel() {
   return (
-    <div className="w-4/6 h-full bg-gray-100 p-8">
+    <div className="w-4/6 h-full bg-gray-100 p-4">
       <Input />
       <div className="w-full flex justify-center gap-4 mt-6">
         {Array(5)
           .fill()
           .map((x) => (
-            <DayView dateString={"2024-10-21"} temperature={"100.c - 400.c"} image={"//cdn.weatherapi.com/weather/64x64/day/113.png"} />
+            <DayView dateString={"2024-10-21"} fromTemp={"100"} toTemp={"400"} image={"//cdn.weatherapi.com/weather/64x64/day/113.png"} />
           ))}
       </div>
       <div>

@@ -1,10 +1,16 @@
-import './App.css'
-import WeatherContainer from './WeatherContainer'
+import { Provider } from "react-redux";
+import "./App.css";
+import WeatherContainer from "./WeatherContainer";
+import store from "./redux/store";
 
 function App() {
   return (
-    <div className="w-svw h-svh flex bg-gray-200 justify-center">
-      <WeatherContainer />
-    </div>
-  )
+    <Provider store={store}>
+      <div className="h-dvh flex bg-gray-200 justify-center">
+        <WeatherContainer />
+      </div>
+    </Provider>
+  );
 }
+
+export default App;
