@@ -25,7 +25,7 @@ export default function WeatherContainer() {
   console.log("myWarether", weatherData);
 
   return (
-    <div className="max-w-7xl w-full h-full p-8">
+    <div className="max-w-7xl w-full h-full py-8 px-2">
       <div className="w-full bg-gray-100  rounded-3xl flex overflow-hidden shadow-xl relative">
         <LeftPanel />
         <RightPanel />
