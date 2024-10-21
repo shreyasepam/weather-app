@@ -1,10 +1,10 @@
 import React from "react";
 
-const TemperatureDisplay = ({ temperature, unit = "C" }) => {
+const TemperatureDisplay = ({ temperature, unit = "C", size = {temp:"7xl", unit:"4xl"} }) => {
   return (
     <div className="font-sans flex items-start">
-      <span className="text-7xl">{temperature}</span>
-      <span className="text-4xl font-semibold mt-1">°{unit}</span>
+      <span className={`text-${size.temp}`}>{temperature}</span>
+      <span className={`text-${size.unit} font-semibold`}>°{unit}</span>
     </div>
   );
 };
