@@ -67,7 +67,7 @@ export default function WeatherSearchInput() {
           value={input}
           onChange={onHandleChange}
           placeholder="Search for places ..."
-          className="w-full py-2 text-sm bg-transparent focus:outline-none"
+          className="w-full py-2 text-sm bg-transparent border-none focus:outline-none focus:ring-0"
         />
         <img
           className="w-[32px] h-[32px] cursor-pointer hover:bg-gray-200 p-2 rounded-full"
