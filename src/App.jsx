@@ -1,5 +1,10 @@
-export default function App() {
+import './App.css'
+import WeatherContainer from './WeatherContainer'
+
+function App() {
   return (
-    <h1 className="text-3xl text-pink-500 font-bold underline">Hello world!</h1>
-  );
+    <div className="w-svw h-svh flex bg-gray-200 justify-center">
+      <WeatherContainer />
+    </div>
+  )
 }
