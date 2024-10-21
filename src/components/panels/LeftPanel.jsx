@@ -6,7 +6,7 @@ import PlaceView from "../PlaceView";
 
 export default function LeftPanel() {
   return (
-    <div className="w-2/6 h-full bg-white flex flex-col items-center">
+    <div className="w-2/6 h-full bg-white flex flex-col items-center p-4">
       <img
         src={data?.current?.condition?.icon}
         className="w-80 object-cover"
@@ -17,7 +17,7 @@ export default function LeftPanel() {
         <DateTimeExtractor dateString={data?.current?.last_updated} />
       </div>
       <div className="w-full px-14 my-6">
-        <div className="w-full border-t border-gray-400"></div>
+        <div className="w-full border-t border-gray-300"></div>
       </div>
       <PlaceView
         name={data?.location?.name}
