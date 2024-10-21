@@ -10,7 +10,7 @@ const DateTimeExtractor = ({ dateString }) => {
   return (
     <div className="mt-4">
       <p className="font-medium text-lg">
-        {day}, <span className="font-normal text-gray-400">{time}</span>
+        {day}, <span className="font-normal text-gray-400 text-md">{time}</span>
       </p>
     </div>
   );

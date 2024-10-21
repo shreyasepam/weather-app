@@ -8,7 +8,7 @@ export default function WeatherContainer() {
     const weatherData = useSelector(state => state.weather);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(fetchWeather());
+        dispatch(fetchWeather("auto:ip"));
     },[]);
 
     console.log("myWarether", weatherData)
